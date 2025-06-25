@@ -3,7 +3,8 @@ echo -e "\e[36mProgress: 0%\e[0m"
 
 echo -e "  \e[33mInstallation started...\e[0m"
 echo -e "\e[34mCreating mkcd install directory\e[0m"
-mkdir /etc/scripts
+echo -e "\e[33m(please enter your sudo password so the install can create the directory [some systems require it for write access to the required directory])\e[0m"
+sudo mkdir /etc/scripts
 
 echo -e "\e[36mProgress: 20%\e[0m"
 
@@ -15,7 +16,7 @@ echo -e "\e[36mProgress: 40%\e[0m"
 
 echo -e "  \e[33mMoved to mkcd install directory\e[0m"
 echo -e "\e[34mFetching mkcd\e[0m"
-echo -e "  \e[33m(please enter your sudo password so the install can create the script after fetching)\e[0m"
+echo -e "  \e[33m(Your sudo password may be required to fetch the script)\e[0m"
 sudo curl https://raw.githubusercontent.com/Supraboy981322/mkcd/refs/heads/main/src/mkcd -o mkcd
 
 echo -e "\e[36mProgress: 60%\e[0m"
