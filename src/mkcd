@@ -1,0 +1,20 @@
+#!/bin/bash
+input=$1
+if [ $input == "-h" ]; then
+  echo -e "\e[36mmkcd usage:\e[0m"
+  echo -e "  \e[33mBasic\e[0m"
+  echo -e "    mkcd \e[32m[dir]\e[0m"
+  echo -e "  \e[33mFlags\e[0m"
+  echo -e "    \e[34m-h\e[0m:"
+  echo -e "      Presents this dialog"
+  echo -e "    \e[34m-c\e[0m OR \e[34m--credit\e[0m[\e[34ms\e[0m] OR \e[34m-a\e[0m OR \e[34m--author\e[0m"
+  echo -e "      Displays the program author"
+  echo ""
+  echo -e "\e[36mWhat is mkcd?\e[0m"
+  echo -e "  mkcd is a delightfully simple program which uses \e[32mmkdir\e[0m and then \e[32mcd\e[0m to enter it"
+elif [ $input == "--credits" ] || [ $input == "-c" ] || [ $input == "--credit" ] || [ $input == "--author" ] || [ $input == "-a" ]; then
+  echo "Written by Zane Sanders (supraboy981322)"
+else
+  mkdir $input
+  cd $input
+fi
