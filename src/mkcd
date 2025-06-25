@@ -1,6 +1,7 @@
 #!/bin/bash
 input=$1
-if [ $input == "-h" ]; then
+
+if [ "$#" -eq 0 ] || [ $input == "--help" ] || [ $input == "-h" ]; then
   echo -e "\e[36mmkcd usage:\e[0m"
   echo -e "  \e[33mBasic\e[0m"
   echo -e "    mkcd \e[32m[dir]\e[0m"
