@@ -35,4 +35,5 @@ source ~/.bashrc
 echo -e "\e[36mProgress: 100%\e[0m"
 echo -e "  \e[33mCompleted!\e[33m"
 
+echo -e "You may have to refresh bashrc before use (\e[32msource ~/.bashrc\e[0m)"
 echo -e "\e[34mSee\e[0m \e[32mmkcd -h\e[0m\e[34m for usage\e[0m"
