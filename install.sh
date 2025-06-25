@@ -30,6 +30,7 @@ echo -e "\e[36m Progress: ??%\e[0m"
 echo -e "  \e[33mMade mkcd executable\e[0m"
 echo -e "\e[34mCreating alias\e[0m"
 echo "alias mkcd='. /etc/scripts/mkcd'" >> ~/.bashrc 
+source ~/.bashrc
 
 echo -e "\e[36mProgress: 100%\e[0m"
 echo -e "  \e[33mCompleted!\e[33m"
