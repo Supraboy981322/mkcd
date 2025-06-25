@@ -1,3 +1,4 @@
+#!/bin/bash
 echo -e "\e[36mProgress: 0%\e[0m"
 
 echo -e "  \e[33mInstallation started...\e[0m"
