@@ -1,5 +1,6 @@
 #!/bin/bash
 input=$1
+version=v1.1
 
 if [ "$#" -eq 0 ] || [ $input == "--help" ] || [ $input == "-h" ]; then
   echo -e "\e[36mmkcd usage:\e[0m"
@@ -14,7 +15,11 @@ if [ "$#" -eq 0 ] || [ $input == "--help" ] || [ $input == "-h" ]; then
   echo -e "\e[36mWhat is mkcd?\e[0m"
   echo -e "  mkcd is a delightfully simple program which uses \e[32mmkdir\e[0m and then \e[32mcd\e[0m to enter it"
 elif [ $input == "--credits" ] || [ $input == "-c" ] || [ $input == "--credit" ] || [ $input == "--author" ] || [ $input == "-a" ]; then
-  echo "Written by Zane Sanders (supraboy981322)"
+  echo  -e "Created by \033[38;2;255;165;0;02mZane Sanders\033[0m (\033[0;33msupraboy981322\033[0m)"
+  echo "My GitHub:"
+  echo -e "  \033[0;36mhttps://github.com/Supraboy981322\033[0m"
+elif [ $input == "-v" ] || [ $input == "--version" ]; then
+  echo "$version"
 else
   mkdir $input
   cd $input
