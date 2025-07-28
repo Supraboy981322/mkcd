@@ -24,7 +24,7 @@ echo -e "\e[36mProgress: 60%\e[0m"
 echo -e "  \e[33mFetched mkcd\e[0m"
 echo -e "\e[34mMaking mkcd executable\e[34m"
 echo -e "  \e[33m(Your sudo password may be required once more to make it executable)\e[0m"
-sudo chmod +x mkcd
+sudo chmod a+x mkcd
 
 echo -e "\e[36mProgress: 80%\e[0m"
 
